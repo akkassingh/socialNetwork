@@ -1,0 +1,4 @@
+{
+    "mongoUrl": "mongodb+srv://root:root@socialnetwork-yh7f9.mongodb.net/test?retryWrites=true",
+    "jwtSecret": "simar"
+}
