@@ -58,9 +58,11 @@ const CreateProfile = ({ createProfile, history }) => {
           <select name='status' value={status} onChange={e => onChange(e)}>
             <option value='0'>* Select Professional Status</option>
             <option value='Developer'>Developer</option>
+            <option value='Lead'>Lead</option>
             <option value='Junior Developer'>Junior Developer</option>
             <option value='Senior Developer'>Senior Developer</option>
             <option value='Manager'>Manager</option>
+            <option value='Senior Manager'>Senior Manager</option>
             <option value='Student or Learning'>Student or Learning</option>
             <option value='Instructor'>Instructor or Teacher</option>
             <option value='Intern'>Intern</option>
@@ -103,7 +105,7 @@ const CreateProfile = ({ createProfile, history }) => {
             onChange={e => onChange(e)}
           />
           <small className='form-text'>
-            City & state suggested (eg. Boston, MA)
+            City & state suggested (eg. Delhi, Gurgaon, Banglore)
           </small>
         </div>
         <div className='form-group'>
@@ -115,7 +117,7 @@ const CreateProfile = ({ createProfile, history }) => {
             onChange={e => onChange(e)}
           />
           <small className='form-text'>
-            Please use comma separated values (eg. HTML,CSS,JavaScript,PHP)
+            Please use comma separated values (eg. HTML,CSS,JavaScript,Node,Java)
           </small>
         </div>
         <div className='form-group'>
