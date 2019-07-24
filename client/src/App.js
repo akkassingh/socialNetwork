@@ -23,10 +23,10 @@ const App= () => {
         <Router>
         <Fragment>
         <Navbar />
-        <switch>
+        <Switch>
         <Route exact path='/' component={Landing} />
         <Routes component={Routes} />
-        </switch>
+        </Switch>
         </Fragment>
         </Router>
     </Provider>
