@@ -1,5 +1,5 @@
 {
-    "mongoUrl": "mongodb+srv://root:root@socialnetwork-yh7f9.mongodb.net/test?retryWrites=true",
+    "mongoUrl": "mongodb+srv://root:root@socialnetwork.yh7f9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
     "jwtSecret": "simar",
     "githubClienId": "30b2bed8cecf40c14a2b",
     "githubClientSecret": "cf25a1cd0f23f58353e8da1b6f1bd161353cef44"
