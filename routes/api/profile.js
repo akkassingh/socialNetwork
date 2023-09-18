@@ -10,7 +10,7 @@ const config = require('config');
 const {
     check,
     validationResult
-} = require('express-validator/check');
+} = require('express-validator');
 
 //@route GET api/profile/me
 //desc   Get current users profile

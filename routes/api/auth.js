@@ -8,13 +8,14 @@ const config = require('config');
 const {
     check,
     validationResult
-} = require('express-validator/check');
+} = require('express-validator');
 
 //@route GET api/auth
 //desc Test route 
 // @access Public
 
 router.get('/', auth, async (req, res) => {
+    console.log("req received ", req.body);
     try {
         const user = await User.findById(req.user.id).select('-password');
         res.json(user);
@@ -48,7 +49,6 @@ router.post(
             email,
             password
         } = req.body;
-
         try {
             let user = await User.findOne({
                 email

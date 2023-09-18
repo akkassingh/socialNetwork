@@ -7,7 +7,7 @@ const config = require('config');
 const {
     check,
     validationResult
-} = require('express-validator/check');
+} = require('express-validator');
 
 const User = require('../../models/User');
 
@@ -66,7 +66,7 @@ router.post(
             user = new User({
                 name,
                 email,
-                avatar,
+                avatar: `https:${avatar}`,
                 password
             });
 
